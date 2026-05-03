@@ -4,9 +4,9 @@
 #include "AudioTools/CoreAudio/AudioEffects/SoundGenerator.h"
 
 // DAC pins
-#define DIN_PIN 7
-#define LRCK_PIN 8
-#define BCLK_PIN 6
+#define DIN_PIN 23
+#define LRCK_PIN 22
+#define BCLK_PIN 21
 #define VOLUME 11000
 
 AudioInfo info(44100, 2, 16);
