@@ -110,13 +110,13 @@ static volatile float param_vol     = DEFAULT_VOL;
 static int grain_timer = 0;
 static int grain_interval = SAMPLE_RATE / (int)DEFAULT_DENSITY;
 
-static SPICLASS         spi(FSPI);
+static SPIClass         spi(FSPI);
 static Adafruit_ST7789  tft(TFT_cS, TFT_DC, TFT_RST);
 
 
 const uint8_t BTN_PINS[4] = {BTN_PLAY, BTN_NEXT, BTN_PREV, BTN_HOLD};
-static bool btnLast[4] = {HIGH,HIGH,HIGH,HIGH};
-static uint32_t btnTime[4] = {0,0,0,0};
+static bool btn_last[4] = {HIGH,HIGH,HIGH,HIGH};
+static uint32_t btn_time[4] = {0,0,0,0};
 #define DEBOUNCE_MS 25
 
 #define MAX_FILES 16
